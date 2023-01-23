@@ -4,7 +4,7 @@
 ***Livrable forké et cloné à partir du repository [Python_Testing](https://github.com/OpenClassrooms-Student-Center/Python_Testing) d'OpenClassrooms-Student-Center.***  
 Il s'agit d'une plateforme de réservation de places à des compétitions de force pour l'entreprise Güdlft.  
 L'objectif du projet est de corriger les bugs et d'implémenter une nouvelle fonctionnalité décrits dans l'Issue repository du projet originel.  
-Chaque correctif de bug ou fonctionnalité correspond à une branche. Il y a égélement une branche d'affinement des tests et une branche QA stable.
+Chaque correctif de bug ou fonctionnalité correspond à une branche. Il y a également une branche d'affinement des tests et une branche QA stable.
 Les tests peuvent être éxécutés via Pytest et Locust.  
 ## Sommaire
 
