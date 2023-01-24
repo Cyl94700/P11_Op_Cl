@@ -101,7 +101,7 @@ def purchaseplaces():
                 flash('Great-booking complete!', 'succes')
                 return render_template('welcome.html', club=club, competitions=competitions), 200
             except ValueError as message:
-                flash(str(message))
+                flash(str(message), 'error')
     except ValueError:
         flash('You must enter an integer.', 'error')
     return render_template('booking.html', club=club, competition=competition), 403
