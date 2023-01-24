@@ -36,11 +36,12 @@ booked_places = initialize_booked_places(competitions, clubs)
 def update_booked_places(competition, club, bkd_places, placesrequired):
     for item in bkd_places:
         if item['competition'] == competition['name']:
-            if item['booked'][1] == club['name'] and item['booked'][0] + placesrequired <= 12:
-                item['booked'][0] += placesrequired
-                break
-            else:
-                raise ValueError("Sorry, you can't book more than 12 places in a competition.")
+            if item['booked'][1] == club['name']:
+                if item['booked'][0] + placesrequired <= 12:
+                    item['booked'][0] += placesrequired
+                    break
+                else:
+                    raise ValueError("Sorry, you can't book more than 12 places in a competition.")
     return bkd_places
 
 
